@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Rw5-ns-KcI">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--MyViewController-->
+        <scene sceneID="HF5-hW-DZA">
+            <objects>
+                <viewController title="MyViewController" id="Rw5-ns-KcI" customClass="MyViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WrT-94-kTm"/>
+                        <viewControllerLayoutGuide type="bottom" id="GRf-jy-2iC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xOT-TG-81E">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a Phoneword:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6eT-2n-aTU">
+                                <rect key="frame" x="160" y="128" width="280" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="jji-Gm-mV9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1-855-ROBOVMZ" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xBE-te-zQ6">
+                                <rect key="frame" x="160" y="210" width="280" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="XAu-CM-PYp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JAJ-Gw-8zl">
+                                <rect key="frame" x="250" y="280" width="100" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="0FU-eE-vWt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Translate">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="300" y="311" width="200" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="clickedTranslate" destination="Rw5-ns-KcI" eventType="touchUpInside" id="3p7-Y9-o5v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Op1-ek-Siy">
+                                <rect key="frame" x="160" y="371" width="280" height="30"/>
+                                <state key="normal" title="Call"/>
+                                <connections>
+                                    <action selector="clickedCall" destination="Rw5-ns-KcI" eventType="touchUpInside" id="cKD-8l-vXD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JAJ-Gw-8zl" firstAttribute="top" secondItem="xBE-te-zQ6" secondAttribute="bottom" constant="40" id="5kJ-zA-pwL"/>
+                            <constraint firstItem="Op1-ek-Siy" firstAttribute="top" secondItem="JAJ-Gw-8zl" secondAttribute="bottom" constant="51" id="89q-wR-4QN"/>
+                            <constraint firstItem="Op1-ek-Siy" firstAttribute="centerX" secondItem="6eT-2n-aTU" secondAttribute="centerX" id="F3j-Ol-IrV"/>
+                            <constraint firstItem="6eT-2n-aTU" firstAttribute="centerX" secondItem="xOT-TG-81E" secondAttribute="centerX" id="OAe-9P-fmV"/>
+                            <constraint firstItem="xBE-te-zQ6" firstAttribute="leading" secondItem="6eT-2n-aTU" secondAttribute="leading" id="Sf3-VB-V9d"/>
+                            <constraint firstItem="xBE-te-zQ6" firstAttribute="top" secondItem="6eT-2n-aTU" secondAttribute="bottom" constant="38" id="eYy-Sw-q6h"/>
+                            <constraint firstItem="GRf-jy-2iC" firstAttribute="top" secondItem="Op1-ek-Siy" secondAttribute="bottom" constant="199" id="oPS-nz-bfV"/>
+                            <constraint firstItem="JAJ-Gw-8zl" firstAttribute="centerX" secondItem="6eT-2n-aTU" secondAttribute="centerX" id="xYx-Zd-mp0"/>
+                            <constraint firstItem="xBE-te-zQ6" firstAttribute="centerX" secondItem="6eT-2n-aTU" secondAttribute="centerX" id="y2j-ex-QAp"/>
+                            <constraint firstItem="6eT-2n-aTU" firstAttribute="top" secondItem="WrT-94-kTm" secondAttribute="bottom" constant="108" id="yVw-zl-ohN"/>
+                            <constraint firstItem="Op1-ek-Siy" firstAttribute="leading" secondItem="xBE-te-zQ6" secondAttribute="leading" id="yqf-oi-Jmt"/>
+                            <constraint firstItem="JAJ-Gw-8zl" firstAttribute="centerY" secondItem="xOT-TG-81E" secondAttribute="centerY" id="zxv-2d-EDb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="callButton" destination="Op1-ek-Siy" id="SNm-vb-Fow"/>
+                        <outlet property="label" destination="6eT-2n-aTU" id="BRp-KC-rUI"/>
+                        <outlet property="textField" destination="xBE-te-zQ6" id="fwm-au-0nB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MK6-Qu-SKr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="625" y="507"/>
+        </scene>
+    </scenes>
+</document>
